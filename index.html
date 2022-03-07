@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Заголовок страницы в браузере -->
+<title>Document</title>
+<!-- Адаптив -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<!-- Подключаем CSS -->
+<link rel="stylesheet" href="css/style.css" />
+<!-- Кодировка страницы -->
+<meta charset="UTF-8">
+<!-- Иконка страницы -->
+<link rel="shortcut icon" href="icon.ico">
+
+<link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__up">
+					<div class="header__logo"><img src="images/header__logo.svg" alt=""></div>
+					<div class="menu__icon">
+						<span></span>
+					</div>
+					<div class="header__town">
+						<form class="town" action="#" name="town">
+							<img class="town__img" src="images/Vector.svg" alt="">
+							<div class="main-form__item">
+								<select id="select_1" name="nameSelect" class="main-form__select">
+									<option value="1" selected>Санкт-питербург</option>
+									<option value="2">Оренбург</option>
+									<option value="3">Уфа</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="header__motto">С нами удобно!</div>
+					<div class="header__timetable">Работаем с 9:00 до 23:00</div>
+					<a class="header__phone" href="tel:+78128888888">+7 (812) 888-88-88</a>
+					<a class="header__phone_tel" href="tel:+78128888888"><img src="images/icon_phone.svg" alt=""></a>
+				</div>
+				<div class="header__down">
+					<ul class="header__list">
+						<li><a href="#">Химчистка</a></li>
+						<li><a href="#">Уборка</a></li>
+						<li><a href="#">Чистка штор</a></li>
+						<li><a href="#">Чистка мягкой мебели</a></li>
+						<li><a href="#">Ремонт обуви</a></li>
+					</ul>
+					<a class="header__seal" href="#"><img src="images/seale.svg" alt="">
+						<p>Заказать онлайн</p>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="container">
+				<section class="cleaning">
+					<div class="cleaning__delivery wow fadeInLeft">
+						<div class="cleaning__title">Химчистка и стирка</div>
+						<div class="cleaning__subtitle">С удобной доставкой</div>
+						<div class="cleaning__timetable">
+							<form class="cleaning__time" action="#" name="time">
+								<div class="main-form__item">
+									<img src="images/time.svg" alt="">
+									<select id="select_1" name="nameSelect" class="main-form__select">
+										<option value="1" selected>21.02.2022г</option>
+										<option value="2">22.02.2022г</option>
+										<option value="3">23.02.2022г</option>
+									</select>
+									<select id="select_1" name="nameSelect" class="main-form__select">
+										<option value="1" selected>21:00 - 22:00</option>
+										<option value="2">12:00 - 13:00</option>
+										<option value="3">17:00 - 18:00</option>
+									</select>
+								</div>
+								<div class="cleaning__btn">
+									<a href="#">Вызвать курьера</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="cleaning__client wow fadeInRight"><img src="images/cleaning__girl.png" alt=""></div>
+				</section>
+				<section class="work">
+					<div class="work__title wow bounceInDown">Как это работает</div>
+					<div class="work__row">
+						<div class="work__section wow fadeInLeft">
+							<div class="work__img"><img src="images/img__1.svg" alt=""></div>
+							<div class="work__text">Забираем грязные вещи в удобное для Вас время</div>
+						</div>
+						<div class="work__section wow bounceInDown">
+							<div class="work__img"><img src="images/img__2.svg" alt=""></div>
+							<div class="work__text">Чистим гипоаллергенными средствами на профессиональном оборудовании
+							</div>
+						</div>
+						<div class="work__section wow fadeInRight">
+							<div class="work__img"><img src="images/img__3.svg" alt=""></div>
+							<div class="work__text">Привозим чистые и отглаженные вещи через 48 часов</div>
+						</div>
+					</div>
+				</section>
+				<section class="sale">
+					<div class="sale__container">
+						<div class="sale__title wow flipInX">Цены</div>
+						<div class="sale__row">
+
+							<div class="sale__section wow fadeInLeft">
+								<div class="sale__clothes">
+									<img src="images/sale__1.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Пуховик</div>
+										<div class="sale__term">Срок чистки - 4 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">1590 р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInRight">
+								<div class="sale__clothes">
+									<img src="images/sale__2.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Пальто</div>
+										<div class="sale__term">Срок чистки - 4 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">1590р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock">Акция! 5 рубашек за 1200₽ 990₽</div>
+							</div>
+
+							<div class="sale__section wow fadeInLeft">
+								<div class="sale__clothes">
+									<img src="images/sale__3.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Рубашка или блузка</div>
+										<div class="sale__term">Срок чистки - 3 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">480р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInRight">
+								<div class="sale__clothes">
+									<img src="images/sale__4.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Брюки</div>
+										<div class="sale__term">Срок чистки - 2 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">590р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInLeft">
+								<div class="sale__clothes">
+									<img src="images/sale__5.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Пиджак</div>
+										<div class="sale__term">Срок чистки - 2 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">640 р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInRight">
+								<div class="sale__clothes">
+									<img src="images/sale__6.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Костюм</div>
+										<div class="sale__term">Срок чистки - 2 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">1090 р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInLeft">
+								<div class="sale__clothes">
+									<img src="images/sale__7.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Платье</div>
+										<div class="sale__term">Срок чистки - 3 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">690р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInRight">
+								<div class="sale__clothes">
+									<img src="images/sale__8.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Пастельное белье</div>
+										<div class="sale__term">Срок чистки - 3 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">240 р/кг</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInLeft">
+								<div class="sale__clothes">
+									<img src="images/sale__9.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Кофта/свитер/джемпер</div>
+										<div class="sale__term">Срок чистки - 3 дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">490р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock"></div>
+							</div>
+
+							<div class="sale__section wow fadeInRight">
+								<div class="sale__clothes">
+									<img src="images/sale__10.svg" alt="">
+									<div class="sale__description">
+										<div class="sale__subtitle">Стирка и глажка одежды по кг</div>
+										<div class="sale__term">Срок чистки - 3дня</div>
+									</div>
+									<div class="sale__option">
+										<div class="sale__sale">980р</div>
+										<div class="sale__number">
+											<div class="sale__minus sale__btn" data-direction="minus">-</div>
+											<input type="text" class="sale__num counter__value" value='0'>
+											<div class="sale__plus sale__btn" data-direction="plus">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sale__stock">Подробнее</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<section class="class">
+					<div class="class__titles wow rollIn">Все категории</div>
+					<div class="class__row ">
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__1.svg" alt="">
+							<div class="class__title">Офисная одежда</div>
+							<div class="class__subtitle">брюки, пиджаки</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__2.svg" alt="">
+							<div class="class__title">Верхняя одежда</div>
+							<div class="class__subtitle">куртки, пальто</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__3.svg" alt="">
+							<div class="class__title">Стирка и глажка</div>
+							<div class="class__subtitle">белье и одежда-по кг.</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__4.svg" alt="">
+							<div class="class__title">Детские коляски и автокресла</div>
+							<div class="class__subtitle"></div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__5.svg" alt="">
+							<div class="class__title">Повседневная одежда</div>
+							<div class="class__subtitle">платье,кофты, джинсы</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__6.svg" alt="">
+							<div class="class__title">Для дома</div>
+							<div class="class__subtitle">подушки, одеяла, чехлы, скатерти</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__7.svg" alt="">
+							<div class="class__title">Кожа и мех</div>
+							<div class="class__subtitle">куртки, шубы, дубленки</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__8.svg" alt="">
+							<div class="class__title">Обувь</div>
+							<div class="class__subtitle">ремонт, чистка и реставрация</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__9.svg" alt="">
+							<div class="class__title">Шторы</div>
+							<div class="class__subtitle">бесплатно снимем и повесим</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__10.svg" alt="">
+							<div class="class__title">Ковры</div>
+							<div class="class__subtitle">бесплатно поможем собрать</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__11.svg" alt="">
+							<div class="class__title">Аксессуары</div>
+							<div class="class__subtitle">сумки, шапки, шарфы</div>
+						</a>
+
+						<a href="#" class="class__section wow zoomInDown">
+							<img src="images/class__12.svg" alt="">
+							<div class="class__title">Другое</div>
+							<div class="class__subtitle">для свадьбы, разное</div>
+						</a>
+					</div>
+					<div class="class__text wow bounceInDown">
+						<p>Бесплатная доставка от 1 990₽,</p>
+						при заказе на меньшую сумму – 390₽
+					</div>
+					<button class="class__btn wow bounceInUp">Все цены</button>
+				</section>
+				<section class="stock">
+					<div class="stock__title wow fadeIn">Акции</div>
+					<div class="stock__row">
+
+						<div class="stock__section wow bounceInLeft">
+							<div class="stock__img"><img src="images/stock__1.svg" alt=""></div>
+							<div class="stock__block">
+								<div class="stock__name">Скидка 50%
+									на детскую одежду</div>
+								<div class="stock__subtitle"></div>
+								<div class="stock__sale"></div>
+								<a href="#" class="stock__stock">Подробнее</a>
+							</div>
+
+						</div>
+
+						<div class="stock__section wow bounceInRight">
+							<div class="stock__img"><img src="images/stock__2.svg" alt=""></div>
+							<div class="stock__block">
+								<div class="stock__name">Стирка и глажка одежды по кг</div>
+								<div class="stock__subtitle">футболки, кофты, джинсы и т.д.</div>
+								<div class="sale__number">
+									<div class="sale__minus sale__btn" data-direction="minus">-</div>
+									<input type="text" class="sale__num counter__value" value='0'>
+									<div class="sale__plus sale__btn" data-direction="plus">+</div>
+								</div>
+								<div class="stock__sale"> 490 р/кг</div>
+								<a href="#" class="stock__stock">Подробнее</a>
+							</div>
+						</div>
+
+						<div class="stock__section wow bounceInLeft">
+							<div class="stock__img"><img src="images/stock__3.svg" alt=""></div>
+							<div class="stock__block">
+								<div class="stock__name">5 рубашек
+									и блузок</div>
+								<div class="stock__subtitle"></div>
+								<div class="stock__sale"> 990р <p><span></span> 1200р</p>
+								</div>
+								<a href="#" class="stock__stock">Подробнее</a>
+							</div>
+
+						</div>
+
+						<div class="stock__section wow bounceInRight">
+							<div class="stock__img"><img src="images/stock__4.svg" alt=""></div>
+							<div class="stock__block">
+								<div class="stock__name">5 кг постельного белья</div>
+								<div class="stock__subtitle"></div>
+								<div class="stock__sale"> 990р <p><span></span>1200р</p>
+								</div>
+								<a href="#" class="stock__stock">Подробнее</a>
+							</div>
+						</div>
+
+
+					</div>
+				</section>
+				<section class="reviews">
+					<div class="reviews__title wow fadeInUpBig">Отзывы наших клиентов</div>
+					<div class="reviews__subtitle wow fadeInDownBig">Средний рейтинг 4.8 из 5
+						<img src="images/Star 1.svg" alt="">
+					</div>
+					<div class="reviews__section wow fadeInUpBig">
+						<div class="reviews__users">
+							<div class="reviews__name">
+								<img src="images/user.svg" alt="">
+								<p>Anatoli</p>
+							</div>
+							<div class="reviews__uptext">Все было просто супер!</div>
+							<div class="reviews__td ">раскрыть отзыв</div>
+							<div class="reviews__text"> Спасибо большое! Очень вежливые курьеры, доставка даже раньше
+								указанного времени. Единственное, в чем я запуталась — это в оплате. При оформлении
+								заказа использовала 500 рублей подаренных бонусов, сумма обозначалась с учетом этой
+								скидки (прилагаю скриншот), а потом данные изменились и оплачена полная сумма. Возможно,
+								я где-то не верно использовала баллы, не до конца поняла систему. Думала, это связано с
+								количеством килограммов белья, но данные об этом не изменились после взвешивания</div>
+
+
+							<div class="reviews__date">20 января 2022г. </div>
+						</div>
+						<div class="reviews__service">
+							<div class="reviews__star">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 0.svg" alt="">
+							</div>
+							<div class="reviews__number">№заказа:567383</div>
+							<div class="reviews__cloth">
+								<div class="reviews__subtext">Было почищено:</div>
+								<br>
+								<img src="images/class__2.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews__section wow fadeInUpBig">
+						<div class="reviews__users">
+							<div class="reviews__name">
+								<img src="images/user.svg" alt="">
+								<p>Anatoli</p>
+							</div>
+							<div class="reviews__uptext">Все было просто супер!</div>
+							<div class="reviews__td ">раскрыть отзыв</div>
+							<div class="reviews__text active"> Спасибо большое! Очень вежливые курьеры, доставка даже
+								раньше указанного времени. Единственное, в чем я запуталась — это в оплате. При
+								оформлении заказа использовала 500 рублей подаренных бонусов, сумма обозначалась с
+								учетом этой скидки (прилагаю скриншот), а потом данные изменились и оплачена полная
+								сумма. Возможно, я где-то не верно использовала баллы, не до конца поняла систему.
+								Думала, это связано с количеством килограммов белья, но данные об этом не изменились
+								после взвешивания</div>
+
+							<div class="reviews__date">20 января 2022г. </div>
+						</div>
+						<div class="reviews__service">
+							<div class="reviews__star">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 0.svg" alt="">
+							</div>
+							<div class="reviews__number">№заказа:567383</div>
+							<div class="reviews__cloth">
+								<div class="reviews__subtext">Было почищено:</div>
+								<br>
+								<img src="images/class__2.svg" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews__section wow fadeInUpBig">
+						<div class="reviews__users">
+							<div class="reviews__name">
+								<img src="images/user.svg" alt="">
+								<p>Anatoli</p>
+							</div>
+							<div class="reviews__uptext">Все было просто супер!</div>
+							<div class="reviews__td ">раскрыть отзыв</div>
+							<div class="reviews__text active"> Спасибо большое! Очень вежливые курьеры, доставка даже
+								раньше указанного времени. Единственное, в чем я запуталась — это в оплате. При
+								оформлении заказа использовала 500 рублей подаренных бонусов, сумма обозначалась с
+								учетом этой скидки (прилагаю скриншот), а потом данные изменились и оплачена полная
+								сумма. Возможно, я где-то не верно использовала баллы, не до конца поняла систему.
+								Думала, это связано с количеством килограммов белья, но данные об этом не изменились
+								после взвешивания</div>
+
+							<div class="reviews__date">20 января 2022г. </div>
+						</div>
+						<div class="reviews__service">
+							<div class="reviews__star">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 1.svg" alt="">
+								<img src="images/Star 0.svg" alt="">
+							</div>
+							<div class="reviews__number">№заказа:567383</div>
+							<div class="reviews__cloth">
+								<div class="reviews__subtext">Было почищено:</div>
+								<br>
+								<img src="images/class__2.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="question one">
+					<div class="question__title ">Частые вопросы</div>
+					<div class="question__block wow flipInX">
+						<div class="question__subtitle">Куда нужно сдавать вещи?
+							<span class="cirkle"><span class="line "></span></span>
+						</div>
+						<div class="question__subtext">Никуда не нужно! Оформите заказ, и мы пришлем курьера, который
+							заберет вещи, а через два дня привезет их обратно чистыми и отглаженными. Курьеры работают
+							ежедневно вплоть до 23:00.</div>
+					</div>
+
+					<div class="question__block wow flipInX">
+						<div class="question__subtitle ">Почему так дешево?
+							<span class="cirkle"><span class="line"></span></span>
+						</div>
+						<div class="question__subtext">Никуда не нужно! Оформите заказ, и мы пришлем курьера, который
+							заберет вещи, а через два дня привезет их обратно чистыми и отглаженными. Курьеры работают
+							ежедневно вплоть до 23:00.</div>
+					</div>
+
+					<div class="question__block wow flipInX">
+						<div class="question__subtitle">Доставка платная?
+							<span class="cirkle"><span class="line"></span></span>
+						</div>
+						<div class="question__subtext">Никуда не нужно! Оформите заказ, и мы пришлем курьера, который
+							заберет вещи, а через два дня привезет их обратно чистыми и отглаженными. Курьеры работают
+							ежедневно вплоть до 23:00.</div>
+					</div>
+
+					<div class="question__block wow flipInX">
+						<div class="question__subtitle">Когда нужно платить?
+							<span class="cirkle"><span class="line"></span></span>
+						</div>
+						<div class="question__subtext">Никуда не нужно! Оформите заказ, и мы пришлем курьера, который
+							заберет вещи, а через два дня привезет их обратно чистыми и отглаженными. Курьеры работают
+							ежедневно вплоть до 23:00.</div>
+
+						<div class="question__block wow flipInX">
+							<div class="question__subtitle">Сотрудничаете ли вы с юридическими лицами?
+								<span class="cirkle"><span class="line"></span></span>
+							</div>
+							<div class="question__subtext">Никуда не нужно! Оформите заказ, и мы пришлем курьера,
+								который заберет вещи, а через два дня привезет их обратно чистыми и отглаженными.
+								Курьеры работают ежедневно вплоть до 23:00.</div>
+						</div>
+
+						<div class="question__text">Не нашли ответ на вопрос? Спросите в чате у специалистов
+							или закажите обратный звонок!</div>
+						<div class="question__call">
+							<a href="#" class="question__telegramm">
+								<img src="images/telegramm.svg" alt="">
+								<p>Спросить в Telegram</p>
+							</a>
+							<button class="question__btn">Заказать звонок</button>
+						</div>
+
+				</section>
+				<section class="delivery">
+					<div class="delivery__title">Удобная доставка</div>
+					<div class="delivery__row">
+						<div class="delivery__map wow fadeInLeftBig">
+							<div style="position:relative;overflow:hidden;"><a
+									href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+									style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+									href="https://yandex.ru/maps/geo/sankt_peterburg/53152804/?ll=30.304908%2C59.918072&utm_medium=mapframe&utm_source=maps&z=10.35"
+									style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт-Петербург —
+									Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBAKsG2A"
+									width="560" height="400" frameborder="1" allowfullscreen="true"
+									style="position:relative;"></iframe></div>
+						</div>
+						<ul class="delivery__block wow fadeInRightBig">
+							<li>Курьеры работают с 10:00 до 23:00</li>
+							<li>Вечером – часовые интервалы,
+								днем – двухчасовые</li>
+							<li>Бесплатная доставка от 1 990₽, при заказе на меньшую сумму – 390₽
+								(заберем и привезем обратно)</li>
+							<li> Зона доставки указана на карте</li>
+						</ul>
+					</div>
+				</section>
+				<sector class="securety">
+					<div class="securety__title wow bounceInDown">Соблюдаем меры безопасности</div>
+					<div class="securety__sector">
+						<div class="securety__block wow fadeInLeft">
+							<img src="images/securety__1.svg" alt="">
+							<div class="securety__subtitle">Контроль состояния</div>
+							<div class="securety__text">Наши курьеры и сотрудники фабрик не допускаются к работе при
+								малейших симптомах ОРВИ или температуре выше 36.8</div>
+						</div>
+						<div class="securety__block wow bounceInDown">
+							<img src="images/securety__2.svg" alt="">
+							<div class="securety__subtitle">Бесконтактная доставка</div>
+							<div class="securety__text">При оформлении заказа
+								в комментариях можно сделать пометку о бесконтактном сборе/доставке</div>
+						</div>
+						<div class="securety__block wow fadeInRight">
+							<img src="images/securety__3.svg" alt="">
+							<div class="securety__subtitle">В масках и перчатках</div>
+							<div class="securety__text">Все наши курьеры оснащены маской
+								и перчатками. После каждого клиента курьер меняет маску и перчатки</div>
+						</div>
+					</div>
+				</sector>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__img">
+				<div class="footer__logo">
+					<img src="images/header__logo.svg" alt="">
+				</div>
+				<div class="footer__social">
+					<img src="images/icon_facebook.svg" alt="">
+					<img src="images/icon_instagram.svg" alt="">
+					<img src="images/icon_vk.svg" alt="">
+				</div>
+			</div>
+			<div class="footer__row">
+
+				<ul class="footer__contact">
+					<li><a href="#">Наши контакты</a></li>
+					<li><a href="#">+7 (812) 888-88-88</a></li>
+					<li><a href="#">там-то и там</a></li>
+					<li><a href="#">@effe-service</a></li>
+				</ul>
+
+				<ul class="footer__sign">
+					<li><a href="#">Пользовательское соглашение
+							и соглашение об использовании
+							персональных данных</a></li>
+					<li><a href="#">Стать курьером </a></li>
+					<li><a href="#">Безопасность
+							и Конфиденциальность</a></li>
+				</ul>
+
+				<ul class="footer__service">
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Оплата Онлайн</a></li>
+				</ul>
+
+			</div>
+		</footer>
+
+
+
+	</div>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
