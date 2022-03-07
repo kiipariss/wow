@@ -357,7 +357,7 @@ h6 {
     padding: 100px 30px 30px 30px;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
-    z-index: 5;
+    z-index: 50;
   }
   .header__list._actives {
     display: -webkit-box;
@@ -458,6 +458,8 @@ h6 {
 }
 
 .main-form__item {
+  position: relative;
+  z-index: 1;
   margin-top: 2px;
 }
 
@@ -531,13 +533,13 @@ h6 {
     left: 20px;
     text-align: center;
     margin: 0 auto;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.954545px;
-    color: #26303B;
+    color: #26303b;
   }
   .cleaning__btn {
     width: 336px;
@@ -893,33 +895,33 @@ h6 {
 
 @media (max-width: 767px) {
   .class__titles {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 800;
     font-size: 32px;
     line-height: 48px;
     letter-spacing: 0.2px;
-    color: #26303B;
+    color: #26303b;
   }
   .class__section {
     width: 160px;
     height: 168px;
   }
   .class__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.954545px;
-    color: #26303B;
+    color: #26303b;
     text-align: center;
   }
   .class__text p {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.954545px;
-    color: #26303B;
+    color: #26303b;
     text-align: center;
   }
   .class__btn {
@@ -1237,11 +1239,11 @@ h6 {
     margin: 20px;
   }
   .reviews__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.9px;
-    color: #26303B;
+    color: #26303b;
   }
   .reviews__subtext {
     height: 56px;
@@ -1407,13 +1409,13 @@ h6 {
 
 @media (max-width: 767px) {
   .question__subtitle {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0.5px;
-    color: #26303B;
+    color: #26303b;
   }
 }
 
@@ -1679,11 +1681,11 @@ h6 {
         -ms-flex-pack: start;
             justify-content: start;
     margin-left: 20px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.3px;
-    color: #26303B;
+    color: #26303b;
   }
   .footer__contact {
     margin: 30px 0;
